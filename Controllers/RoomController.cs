@@ -1,13 +1,16 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Text.Encodings.Web;
+using BuildRoom.Models;
 
 namespace BuildRoom.Controllers
 {
     public class RoomController : Controller
     {
-        public string Index()
+        public ActionResult Index()
         {
-            return "Index Rooms";
+            var NewRoom = new Room();
+            NewRoom.RoomName = "Entry";
+            return View(NewRoom);
         }
         public string CreateRoom()
         {
