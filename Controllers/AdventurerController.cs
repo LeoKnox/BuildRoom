@@ -8,7 +8,9 @@ namespace BuildRoom.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            Adventurer NewAdventurer = new Adventurer();
+            NewAdventurer.CharName = "Eveehi";
+            return View(NewAdventurer);
         }
     }
 }
