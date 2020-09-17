@@ -10,9 +10,12 @@ namespace BuildRoom.Controllers
         {
             Adventurer NewAdventurer = new Adventurer();
             Monster Mob = new Monster();
+            Room MyRoom = new Room();
+            MyRoom.RoomName = "Entry";
             Mob.MonsterName = "Steve the Orc";
             NewAdventurer.CharName = "Eveehi";
-            return View(NewAdventurer);
+            //MyRoom.Adventurers.Add(NewAdventurer);
+            return View(MyRoom);
         }
     }
 }

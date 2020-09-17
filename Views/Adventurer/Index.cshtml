@@ -1,4 +1,4 @@
-@model BuildRoom.Models.Adventurer
+@model BuildRoom.Models.Room
 
 @{
     ViewData["Title"] = "Adventuer";
@@ -7,4 +7,5 @@
 <h2>Adventurers</h2>
 
 <p>Create Adventurers</p>
-<p>@Model.CharName attacks: @Model.SwordStrike()</p>
+<p>Entering @Model.RoomName</p>
+<p>Model.Adventurers[0].CharName attacks: Model.Adventurers[0].SwordStrike()</p>
