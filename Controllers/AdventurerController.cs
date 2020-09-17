@@ -9,6 +9,8 @@ namespace BuildRoom.Controllers
         public ActionResult Index()
         {
             Adventurer NewAdventurer = new Adventurer();
+            Monster Mob = new Monster();
+            Mob.MonsterName = "Steve the Orc";
             NewAdventurer.CharName = "Eveehi";
             return View(NewAdventurer);
         }
