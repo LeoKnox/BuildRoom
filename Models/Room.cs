@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace BuildRoom.Models
 {
@@ -8,5 +9,6 @@ namespace BuildRoom.Models
         public int Length { get; set; }
         public string WallMaterial { get; set; }
         public string FloorMaterial { get; set; }
+        public List<Adventurer> Adventurers { get; set; }
     }
 }
