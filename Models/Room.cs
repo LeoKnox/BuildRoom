@@ -3,8 +3,11 @@ using System.Collections.Generic;
 
 namespace BuildRoom.Models
 {
-    public class Room {
-        public string RoomName {get; set; }
+    public class Room
+    {
+        private List<Adventurer> adventurers;
+
+        public string RoomName { get; set; }
         public int Width { get; set; }
         public int Length { get; set; }
         public string WallMaterial { get; set; }

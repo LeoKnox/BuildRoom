@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Text.Encodings.Web;
 using BuildRoom.Models;
+using System.Collections.Generic;
 
 namespace BuildRoom.Controllers
 {
@@ -14,7 +15,11 @@ namespace BuildRoom.Controllers
             MyRoom.RoomName = "Entry";
             Mob.MonsterName = "Steve the Orc";
             NewAdventurer.CharName = "Eveehi";
-            //MyRoom.Adventurers.Add(NewAdventurer);
+            NewAdventurer.Attack = 10;
+            NewAdventurer.Defense = 11;
+            NewAdventurer.Mana = 7;
+            MyRoom.Adventurers = new List<Adventurer>();
+            MyRoom.Adventurers.Add(NewAdventurer);
             return View(MyRoom);
         }
     }
